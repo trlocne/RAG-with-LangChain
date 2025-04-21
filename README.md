@@ -25,7 +25,7 @@ Below is a pipeline of the Project system:
 
 ### Prerequisites
 
-- Python 3.8 or higher
+- Python 3.10 or higher
 - Install dependencies using `pip`:
   ```bash
   pip install -r requirements.txt
@@ -49,7 +49,7 @@ Set the following environment variable:
 
 Start the FastAPI server:
 ```bash
-uvicorn src.app:app --reload
+uvicorn main:app --host 0.0.0.0 --port 5000 --reload
 ```
 
 ### API Endpoints
